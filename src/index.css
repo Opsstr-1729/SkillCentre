@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0e5774;
+  --color-brand-primary-hover: #093f54;
+  --color-brand-primary-light: #eaf4f8;
+  --color-brand-primary-subtle: #f0f7fa;
+  --color-brand-primary-border: #bcd8e3;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom print style for executive summary briefing report */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}

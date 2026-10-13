@@ -1,0 +1,6 @@
+{
+  "name": "Centre Infrastructure & Facility Data Collection",
+  "description": "Government infrastructure and facility data collection portal with real-time summary reporting and Google Sheets export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
